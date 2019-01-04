@@ -1,0 +1,9 @@
+body {
+  background-image: url("./assets/images/background.jpg");
+  /* Set rules to fill background */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: auto;
+}
