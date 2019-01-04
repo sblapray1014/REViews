@@ -1,0 +1,45 @@
+{
+  "name": "emaily",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run webhook\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "webhook": "ssh -R saflkjasldsaaslksjfdjfasljdoidf:80:localhost:5000 serveo.net"
+  },
+  "engines": {
+    "node": "10.8.0",
+    "npm": "6.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sblapray1014/emaily.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sblapray1014/emaily/issues"
+  },
+  "homepage": "https://github.com/sblapray1014/emaily#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.1",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.3",
+    "localtunnel": "^1.9.1",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.2.7",
+    "nodemon": "^1.18.3",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0",
+    "path-parser": "^4.2.0",
+    "sendgrid": "^5.2.3",
+    "stripe": "^6.8.0",
+    "yarn": "^1.9.4"
+  }
+}
