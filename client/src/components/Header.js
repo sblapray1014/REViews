@@ -17,7 +17,7 @@ class Header extends Component {
       default:
         return [
           <li key="1" style={{ marginRight: "80px" }}>
-            Welcome back, {this.props.auth.name}!
+            Welcome, {this.props.auth.name}!
           </li>,
           <li key="2">
             <Payments />
